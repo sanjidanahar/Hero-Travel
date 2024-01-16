@@ -1,4 +1,4 @@
-@media screen and (max-width: 578px) {
+/* @media screen and (max-width: 578px) {
     header,
     main {
       padding: 1rem;
@@ -30,4 +30,56 @@
     .menu-icon {
         display: block;
       }
+} */
+
+/* responsive designs */
+@media (min-width: 992px) {
+    .header-section {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1400px){
+    .header-section{
+        width: 1170px;
+    }
+}
+/* responsive navbar */
+@media screen and (max-width: 600px){
+    .nav-container{
+        height: 64px;
+    }
+    .nav-container .logo-container img{width: 21px;}
+    .nav-container .logo-container p{font-size: 21px;}
+    .nav-container .items-container ul{display: none;}
+    .nav-container .items-container button{display: block;}
+}
+
+@media screen and (max-width: 600px) {
+    .banner .text-content{
+        padding: 0px 24px;
+    }
+    .banner .text-content .banner-form{
+        display: block;
+        width: 100%;
+    }
+    .banner .banner-form .box{
+        width: 100%;
+    }
+    .banner .banner-form .forms{
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .banner .box .form-btn{
+        width: 100%;
+        margin-top: 16px;
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+
+    .hero-section .content h1{
+        font-size: 22px;
+    }
+    .hero-section .content p{font-size: 14px;}
 }
