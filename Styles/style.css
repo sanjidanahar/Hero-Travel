@@ -12,133 +12,386 @@ body {
 
 }
 
-/* Header section starts here */
-
-.header-section {
-    /* margin-bottom: 40px; */
-    margin-top: 25px;
+/* shared styles  */
+.header-section,
+main {
+    padding: 8rem;
+    padding-top: 0;
+    padding-bottom: 6rem;
 }
 
-.nav-container {
-    min-height: 20px;
-    display: flex;
-    align-items: center;
-    max-width: 1250px;
-    margin: 0 auto;
+.primary {
+    color: #ff5400;
 }
+
+.btn-primary {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: none;
+    background: #ff5400;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    /* box-sizing: border-box; */
+    gap: 32;
+    /* width: 25%; */
+}
+
+
+/* header section  */
 
 .logo-container {
+    font-size: 2.25rem;
     display: flex;
-    width: 50%;
-    align-items: center;
-}
-
-.logo-container p {
+    gap: 1rem;
     color: #131318;
-    font-size: 36px;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
-}
-
-.travel {
-    color: #FF5400;
-    font-weight: 800;
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 .logo-container img {
-    width: 48px;
-    height: 56.008px;
-    /* object-fit: cover; */
+    width: 1em;
 }
 
-.items-container {
-    width: 50%;
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin: 2rem 0;
 }
 
-.items-container a {
+.nav-container ul {
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-container ul a {
     text-decoration: none;
     color: #424247;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
-/* Header section ends here */
-
-/* main section start here */
-
-/* banner part */
-
-.banner .banner-heading {
-    /* width: 100%; */
-    /* height: 600px; */
-    width: 1250px;
-    height: 500px;
-    border-radius: 16px;
-    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(media/banner.png);
-    overflow: hidden;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0 250px;
-    margin: 50px 50px;
-    /* display: flex; */
-    justify-content: space-between;
+/* banner section */
+.banner {
+    aspect-ratio: 1170/500;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0)), url("../media/banner.png");
+    /* display: flex;  */
     align-items: center;
+    justify-content: center;
+    padding: 0 11.5rem;
+    box-sizing: border-box;
 }
 
-.container {
-    width: 1320px;
-    /* max-width: calc(100% - 20px); */
-    height: auto;
-    margin: 0 auto;
-}
-
-.banner .banner-heading .text-content h1 {
-    color: #FFF;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    /* align-items: center; */
-    padding-top: 100px;
-    padding-bottom: 24px;
-}
-
-.banner .banner-heading .text-content p {
-    color: #FFF;
+.banner .text-content {
     text-align: center;
+}
+
+.text-content h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 800;
+    /* padding: 7em 1em; */
+}
+
+.description {
+    padding: 0 3rem;
+    /* margin-bottom: 4em; */
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.74);
+}
+
+/* form */
+/* .banner .banner-form form {
+    border: 0;
+  padding: 0.8rem 1.5rem;
+  box-sizing: border-box;
+  outline: 0;
+  border-radius: 0.5rem;
+  display: block;
+  width: 100%;
+} */
+.banner form * {
+    border: 0;
+    padding: 0.8rem 1.5rem;
+    box-sizing: border-box;
+    outline: 0;
+    border-radius: 0.5rem;
+    display: block;
+    width: 100%;
+}
+
+.banner form .btn-primary {
+    /* min-width: max-content; */
+}
+
+/* tour section */
+
+.tour-section {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.section-paragraph {
+    color: rgba(19, 19, 24, 0.70);
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 26px;
-    padding-bottom: 48px;
+    margin-bottom: 2rem;
+
 }
 
-.banner-form {
-    display: inline-flex;
-    padding: 16px;
-    align-items: flex-start;
-    gap: 24px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.30);
+.section-last {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 2rem;
 }
 
-/* .form-title {
-    width: 174px;
-    height: 52px;
-    flex-shrink: 0;
+.section-heading h2 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.tour-section ul {
+    padding-left: 1.5rem;
+    color: #131318b3;
+}
+
+.tour-image {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* destination section */
+
+.destination-section {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.destination-heading h2 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.destination-heading p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 1.5rem;
+}
+
+/* .destination-image-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
 } */
 
-/* .form-container {
-    width: 174px;
-    height: 52px;
-    /* flex-shrink: 0; */
-    /* display: flex; 
-    border-radius: 8px;
-    background: #FFF;
-} */
+.destination-img-container img {
+    width: 100%;
+    height: 18rem;
+    /* object-fit: cover; */
+    border-radius: 1rem;
+}
+
+.destination-img-container .images {
+    position: relative;
+    cursor: pointer;
+}
+
+.destination-image-1 {
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+.destination-image-2 {
+    grid-area: 1 / 6 / 2 / 11;
+}
+
+.destination-image-3 {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.destination-image-4 {
+    grid-area: 2 / 4 / 3 / 8;
+}
+
+.destination-image-5 {
+    grid-area: 2 / 8 / 3 / 11;
+}
+
+.destination-image-6 {
+    grid-area: 3 / 1 / 4 / 5;
+}
+
+.destination-image-7 {
+    grid-area: 3 / 5 / 4 / 11;
+}
+
+*/ .destination-image-title {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    color: rgba(9, 9, 9, 0.9);
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* choose */
+
+.choose {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.choose-heading h2 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 2rem 0 1.5rem;
+}
+
+.choose-heading p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.choose-image-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.choose-image-section .card {
+    width: calc(50% - 1.5rem / 2);
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.card-title h3 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.card-title p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* newslatter section */
+
+.news-section {
+    margin-top: 5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.news-content {
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    border: 1px solid #ff5400;
+
+}
+
+.news-content h3 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.news-content p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.news-letter-content form {
+    border-top: 1px solid rgba(19, 19, 24, 0.1);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.news-content form * {
+    border: 0;
+    padding: 0.8rem 1.5rem;
+    box-sizing: border-box;
+    outline: 0;
+    border-radius: 0.5rem;
+    display: block;
+    width: 100%;
+    background: #ff5400;
+    color: white;
+}
+
+.news-content form input {
+    margin-bottom: 1rem;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.news-banner {
+    position: relative;
+}
+
+.news-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.discount-container {
+    border-radius: 1rem;
+    background: #ff5400;
+    transform: rotate(-19.628deg);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    position: absolute;
+    bottom: 2.7rem;
+    right: 0.5rem;
+}
+
+.discount-container * {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.discount-container p {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.discount-container h3 {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+}
