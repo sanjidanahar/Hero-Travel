@@ -1,0 +1,33 @@
+@media screen and (max-width: 578px) {
+    header,
+    main {
+      padding: 1rem;
+      padding-top: 0;
+    }
+    nav ul,
+    nav {
+      flex-direction: column;
+    }
+    nav ul {
+      display: none;
+      margin-top: 2rem;
+      gap: 1rem;
+    }
+    nav > div{
+      width: 100%;
+    }
+    .nav-container {
+      font-size: 1.25rem;
+      gap: 0.5rem;
+    }
+    .description {
+      font-size: 0.8rem;
+    }
+    .btn-primary {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.8rem;
+    }
+    .menu-icon {
+        display: block;
+      }
+}

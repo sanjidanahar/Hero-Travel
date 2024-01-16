@@ -12,7 +12,10 @@ body {
 
 }
 
-/* shared styles  */
+.menu-icon {
+    display: none;
+}
+
 .header-section,
 main {
     padding: 8rem;
@@ -25,15 +28,17 @@ main {
 }
 
 .btn-primary {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
     border-radius: 0.5rem;
     border: none;
     background: #ff5400;
     color: white;
-    padding: 0.8rem 1.5rem;
-    /* box-sizing: border-box; */
-    gap: 32;
+    /* justify-content: centeralign; */
+    align-items: center;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    /* gap: 24; */
     /* width: 25%; */
 }
 
@@ -92,20 +97,50 @@ main {
     text-align: center;
 }
 
+
 .text-content h1 {
     color: #fff;
     font-size: 4rem;
+    padding-top: 6rem;
     font-weight: 800;
-    /* padding: 7em 1em; */
+
 }
 
 .description {
-    padding: 0 3rem;
-    /* margin-bottom: 4em; */
+    padding: 2rem 3rem;
     box-sizing: border-box;
     color: rgba(255, 255, 255, 0.74);
 }
 
+.banner form {
+    /* margin-top: 8rem; */
+    padding-bottom:8rem;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.banner form * {
+    border: 0;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    outline: 0;
+    border-radius: 0.5rem;
+    display: block;
+    width: 100%;
+    height: 3rem;
+}
+
+/* .banner form .btn-primary {
+    min-width: max-content;
+  } */
+/* .banner form select,
+  .banner form input::placeholder {
+    color: rgba(19, 19, 24, 0.5);
+  } */
 /* form */
 /* .banner .banner-form form {
     border: 0;
@@ -116,7 +151,7 @@ main {
   display: block;
   width: 100%;
 } */
-.banner form * {
+/* .banner form * {
     border: 0;
     padding: 0.8rem 1.5rem;
     box-sizing: border-box;
@@ -124,7 +159,7 @@ main {
     border-radius: 0.5rem;
     display: block;
     width: 100%;
-}
+} */
 
 .banner form .btn-primary {
     /* min-width: max-content; */
@@ -201,18 +236,83 @@ main {
     gap: 1.5rem;
 } */
 
-.destination-img-container img {
+/* .destination-img-container img {
     width: 100%;
     height: 18rem;
-    /* object-fit: cover; */
+    object-fit: cover;
     border-radius: 1rem;
+} */
+
+.destination-image-container .image {
+    padding: 1rem 2rem;
 }
 
-.destination-img-container .images {
-    position: relative;
-    cursor: pointer;
+.destination-image-1 {
+    display: flex;
+    padding: 2rem 2rem;
+    margin-right: 2rem;
+
 }
 
+.destination-image-2 {
+    display: flex;
+    padding: 1.5rem 2rem;
+
+}
+
+.destination-image-3 {
+    display: flex;
+    padding: 1rem 2rem;
+
+}
+
+.maldiv {
+    width: 573px;
+    height: 300px;
+    margin-right: 10px;
+
+}
+
+.indo {
+    width: 573px;
+    height: 300px;
+    margin-right: 10px;
+}
+
+.sril {
+    width: 374px;
+    height: 286px;
+    margin-right: 10px;
+
+}
+
+.north {
+    width: 474px;
+    height: 286px;
+    margin-right: 10px;
+
+}
+
+.kashmir {
+    width: 274px;
+    height: 286px;
+    margin-right: 10px;
+
+}
+
+.bangla {
+    width: 473px;
+    height: 300px;
+    margin-right: 10px;
+}
+
+.banda {
+    width: 673px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+/* 
 .destination-image-1 {
     grid-area: 1 / 1 / 2 / 6;
 }
@@ -239,13 +339,14 @@ main {
 
 .destination-image-7 {
     grid-area: 3 / 5 / 4 / 11;
-}
+} */
 
-*/ .destination-image-title {
+.destination-image-title {
     position: relative;
-    top: 50%;
-    left: 50%;
-    /* transform: translate(-50%, -50%); */
+    /* bottom: 100%; */
+    right: 30%;
+    padding: 5rem 2rem;
+    transform: translate(-50%, -50%);
     color: rgba(9, 9, 9, 0.9);
     font-size: 1.75rem;
     font-weight: 800;
@@ -394,4 +495,56 @@ main {
     color: #FFF;
     font-size: 2rem;
     font-weight: 800;
+}
+
+/* footer section */
+
+.container {
+    padding: 4rem 15rem;
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-heading {
+    /* width: min-content; */
+    margin: 0 auto;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    color: #131318;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.footer-description {
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.icon-container {
+    margin-top: 1rem;
+}
+
+.icon-container a {
+    color: #131318;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+
+}
+
+.container .icon-container hr {
+    background: rgba(19, 19, 24, 0.10);
+}
+
+.icon-container p {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 2rem;
 }
