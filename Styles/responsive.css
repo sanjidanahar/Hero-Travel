@@ -33,21 +33,19 @@
 } */
 
 /* responsive designs */
-@media (min-width: 992px) {
-    .header-section {
-        width: 768px;
-    }
-}
 
-@media (min-width: 1400px){
-    .header-section{
-        width: 1170px;
-    }
-}
 /* responsive navbar */
 @media screen and (max-width: 600px){
     .nav-container{
         height: 64px;
+    }
+    .navbar{
+      max-width: calc(100% - 10px);
+      margin: 0 auto;
+
+    }
+    .menu-icon {
+      display: block;
     }
     .nav-container .logo-container img{width: 21px;}
     .nav-container .logo-container p{font-size: 21px;}
@@ -58,6 +56,9 @@
 @media screen and (max-width: 600px) {
     .banner .text-content{
         padding: 0px 24px;
+    }
+    .header-section{
+      width: 100%!important;
     }
     .banner .text-content .banner-form{
         display: block;
@@ -82,4 +83,15 @@
         font-size: 22px;
     }
     .hero-section .content p{font-size: 14px;}
+}
+@media (min-width: 992px) {
+  .header-section {
+      width: 768px;
+  }
+}
+
+@media (min-width: 1400px){
+  .header-section{
+      width: 1170px;
+  }
 }
